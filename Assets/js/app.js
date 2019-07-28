@@ -110,14 +110,24 @@ function decryption(){
 
 
 //Copy the TExt
- function copytext(text){
-    navigator.clipboard.writeText(text);
-    let alert=document.createElement('p');
-    alert.className="alert alert-success py-2";
-    alert.appendChild(document.createTextNode('Text is Copied.'));
-    document.querySelector('.form-group').insertBefore(alert,encryptFirstText);
-    // console.log(alert);
-    setTimeout(function(){
-        document.querySelector('.alert').remove();
-    },1500);
+//  function copytext(text){
+//     navigator.clipboard.writeText(text);
+//     let alert=document.createElement('p');
+//     alert.className="alert alert-success py-2";
+//     alert.appendChild(document.createTextNode('Text is Copied.'));
+//     document.querySelector('.form-group').insertBefore(alert,encryptFirstText);
+//     // console.log(alert);
+//     setTimeout(function(){
+//         document.querySelector('.alert').remove();
+//     },1500);
+//  }
+
+ ///Copy the text and code
+ function copycode(){
+    decryptFirstText.select();
+    document.execCommand("copy");
+ }
+ function copytext(){
+    decryptSecondText.select();
+    document.execCommand("copy");
  }
