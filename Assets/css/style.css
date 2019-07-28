@@ -8,11 +8,11 @@
 body{
     background: linear-gradient(to right,rgb(113, 10, 182),rgb(139, 13, 139))
 }
+
 @media only screen and (max-width:600px){
-.copy{
-    font-size:12px;
-    padding:5px;
-    letter-spacing:0px;
-    z-index:-1;
+    .copy{
+        font-size:15px;
+        padding:2px !important;
+        letter-spacing: 0px;
     }
 }
