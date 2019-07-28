@@ -61,6 +61,13 @@ function generateRandomText(){
         randomletter=letters[Math.floor(Math.random()*53)];
         randomtext+=randomletter;
     }
+    let keyGenValue;
+    for(let k=0;k<localStorage.length;k++){
+        keyGenValue=(localStorage.getItem(localStorage.key(k)));
+        if(keyGenValue==randomtext){
+            return "";
+        }
+    }
     return randomtext;            
 }
 
