@@ -4,6 +4,7 @@
     width:100%;
     font-size:20px;
     letter-spacing: 1px;
+    padding:15px;
 }
 body{
     background: linear-gradient(to right,rgb(113, 10, 182),rgb(139, 13, 139))
