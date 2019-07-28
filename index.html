@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAPE Encription</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto ">
+                <h1 class="display-4 text-center py-3 text-white">Encryption</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control my-3" id="encryptfirsttext" placeholder="Enter Text..." value="">
+                    <input type="text" class="form-control my-3" id="decryptfirsttext" placeholder="Encrypted Text..." disabled>
+                    <button class="btn btn-success" id="encryptbtn">Encrypt the Text</button>
+                </div>
+                <h1 class="display-4 text-center mt-2 py-3 text-white">Decryption</h1>
+                <div class="form-group last-form-group">
+                    <input type="text" class="form-control my-3" id="encryptsecondtext" placeholder="Enter Encrypted Text...">
+                    <input type="text" class="form-control my-3" id="decryptsecondtext"  placeholder="Decrypted Text..." disabled>
+                    <button class="btn btn-danger" id="decryptbtn">Decrypt the Text</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy text-center bg-dark text-white ">Developed By <a href="https://yourwebsite.github.io/" target="_blank"> Sandip Sadhukhan</a></div>
+    <script src="Assets/js/app.js"></script>
+</body>
+</html>
